@@ -36,15 +36,15 @@ export default function APIProviderDetails({apidata}) {
                 <tbody>
             <tr>
                 <td style={{width:'30%'}}>Email</td>
-                <td>{apidata.contact[0].email}</td>
+                <td>{apidata.contact[0]?apidata.contact[0].email:""}</td>
             </tr>
             <tr>
                 <td>Name</td>
-                <td>{apidata.contact[0].name}</td>
+                <td>{apidata.contact[0]?apidata.contact[0].name:""}</td>
             </tr>
             <tr>
                 <td>Url</td>
-                <td>{apidata.contact[0].url}</td>
+                <td>{apidata.contact[0]?apidata.contact[0].url:""}</td>
             </tr>
             </tbody>
             </table>
