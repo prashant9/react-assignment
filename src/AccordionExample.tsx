@@ -89,7 +89,7 @@ export function Accordion({
         style={
           collapse
             ? {
-                height: accordionBodyRef.current?.clientHeight,
+                height: 'auto',
                 transition: "height 0.2s ease",
                 overflow: "hidden"
               }
